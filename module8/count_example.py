@@ -7,3 +7,5 @@ for n in itertools.count():
         print n
     if n > 1000000:
         break
+        
+myfile.close()
