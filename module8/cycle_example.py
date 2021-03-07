@@ -4,3 +4,5 @@ myfile = open('data.txt', 'r')
 
 for n in itertools.cycle(myfile):
     print(n)
+    
+myfile.close()
