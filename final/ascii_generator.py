@@ -10,7 +10,7 @@ gscale1 = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'
 gscale2 = '@%#*+=-:. '
 
 
-def getAverageL(image):
+def getAverageGS(image):
     #utilizing Pillow, return avg value of grayscale
     im = np.array(image)
     w,h = im.shape
@@ -59,7 +59,7 @@ def covertImage(fileName, col, scale, moreLevels):
             img = image.crop((x1, y1, x2, y2))
   
             # get average luminance
-            avg = int(getAverageL(img))
+            avg = int(getAverageGS(img))
   
             if moreLevels:
                 gsval = gscale1[int((avg*69)/255)]
